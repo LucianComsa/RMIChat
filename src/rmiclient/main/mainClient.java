@@ -7,7 +7,8 @@ public class mainClient {
 
     public static void main(String[] args)
     {
-        GUIChat chat = new GUIChat(new User());
-        chat.show();
+        //GUIChat chat = new GUIChat(new User());
+        //chat.show();
+
     }
 }
