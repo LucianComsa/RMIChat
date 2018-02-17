@@ -1,8 +1,11 @@
-package model;
+package common.model;
 
+import common.model.User;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class UserList
+public class UserList implements Serializable
 {
     private ArrayList<User> userList;
 
@@ -46,5 +49,16 @@ public class UserList
             }
         }
         return false;
+    }
+    public void removeUser(String name)
+    {
+        for(int i = 0; i < userList.size(); i++)
+        {
+            if(name.equals(userList.get(i).getName()))
+            {
+                userList.remove(i);
+                break;
+            }
+        }
     }
 }
